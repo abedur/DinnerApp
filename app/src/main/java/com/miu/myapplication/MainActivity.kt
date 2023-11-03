@@ -13,8 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        //textFoodName.text = "test";
         binding.textFoodName.text= foodList.random();
 
         binding.addBtn.setOnClickListener{
@@ -33,8 +31,5 @@ class MainActivity : AppCompatActivity() {
         binding.decideBtn.setOnClickListener {
             binding.textFoodName.text = foodList.random();
         }
-
-
-
     }
 }
